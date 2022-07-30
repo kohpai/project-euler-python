@@ -1,6 +1,12 @@
 import re
 
-from node import Node
+
+class Node:
+    def __init__(self, val: int):
+        self.val = val
+        self.left = None
+        self.right = None
+        self.max_path = None
 
 
 def split_at_inc(index: int, data: list[int]):
